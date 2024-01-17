@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote fetch="https://github.com/ADVANTECH-Corp" name="meta-advantech2"/>
+  <remote fetch="https://git.ti.com/git/processor-sdk" name="meta-processor-sdk"/>
+  <remote fetch="https://github.com/meta-qt5" name="meta-qt5"/>
+  <remote fetch="https://git.openembedded.org" name="openembedded"/>
+  <remote fetch="https://git.yoctoproject.org" name="yocto"/>
+  
+  <default sync-j="2"/>
+  
+  <project name="bitbake" path="sources/bitbake" remote="openembedded" revision="9993a89e5b97dda5f3657e5a7cc3a4fa94ff7111" upstream="2.0"/>
+  <project dest-branch="aim20-rocko-sumo" name="meta-advantech2" path="sources/meta-advantech2" remote="meta-advantech2" revision="efbefe70f7940ad2a09014fdeb8e9505f8cf5e0f" upstream="aim20-rocko-sumo">
+    <linkfile dest="configs" src="meta-ti-adv/configs"/>
+    <linkfile dest="sample-files" src="meta-ti-adv/sample-files"/>
+    <linkfile dest="oe-layertool-setup.sh" src="meta-ti-adv/oe-layertool-setup.sh"/>
+  </project>
+  <project name="meta-arago" path="sources/meta-arago" remote="yocto" revision="a9dcc0583f44bd7a7d8780759c2091b85d280ec2" upstream="kirkstone"/>
+  <project name="meta-arm" path="sources/meta-arm" remote="yocto" revision="b187fb9232ca0a6b5f8f90b4715958546fc41d73" upstream="kirkstone"/>
+  <project name="meta-openembedded" path="sources/meta-openembedded" remote="openembedded" revision="9c5541f7e18a1fac3b8dea71e1ebb8398d58e6ff" upstream="kirkstone"/>
+  <project name="meta-processor-sdk.git" path="sources/meta-processor-sdk" remote="meta-processor-sdk" revision="3cbe955ce03d9c25e59e3a401f378132163a3569" upstream="kirkstone"/>
+  <project name="meta-qt5.git" path="sources/meta-qt5" remote="meta-qt5" revision="ae8a97f79364bed1abc297636f7933d0e35f22be" upstream="kirkstone"/>
+  <project name="meta-ti" path="sources/meta-ti" remote="yocto" revision="59edb4e886df468edeb683355c36f06004b29925" upstream="kirkstone"/>
+  <project name="meta-virtualization" path="sources/meta-virtualization" remote="yocto" revision="2d8b3cba8ff27c9ec2187a52b6a551fe1dcfaa07" upstream="kirkstone"/>
+  <project name="openembedded-core" path="sources/oe-core" remote="openembedded" revision="2572b32e729831762790ebfbf930a1140657faea" upstream="kirkstone"/>
+</manifest>
