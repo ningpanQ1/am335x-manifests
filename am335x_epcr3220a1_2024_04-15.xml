@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  <remote fetch="https://github.com/ADVANTECH-Corp" name="meta-advantech2"/>
+  <remote fetch="https://github.com/ningpanQ1" name="meta-advantech2"/>
   <remote fetch="https://git.ti.com/git/processor-sdk" name="meta-processor-sdk"/>
   <remote fetch="https://github.com/meta-qt5" name="meta-qt5"/>
   <remote fetch="https://git.openembedded.org" name="openembedded"/>
@@ -9,7 +9,7 @@
   <default sync-j="2"/>
   
   <project name="bitbake" path="sources/bitbake" remote="openembedded" revision="9993a89e5b97dda5f3657e5a7cc3a4fa94ff7111" upstream="2.0"/>
-  <project dest-branch="aim20-rocko-sumo" name="meta-advantech2" path="sources/meta-advantech2" remote="meta-advantech2" revision="efbefe70f7940ad2a09014fdeb8e9505f8cf5e0f" upstream="aim20-rocko-sumo">
+  <project dest-branch="tisdk-v09x" name="meta-advantech2" path="sources/meta-advantech2" remote="meta-advantech2" revision="f7d58861edf41abd4debb1249d72478014744dfb" upstream="tisdk-v09x">
     <linkfile dest="configs" src="meta-ti-adv/configs"/>
     <linkfile dest="sample-files" src="meta-ti-adv/sample-files"/>
     <linkfile dest="oe-layertool-setup.sh" src="meta-ti-adv/oe-layertool-setup.sh"/>
